@@ -1,0 +1,963 @@
+{
+	"name": "Final Fantasy IV",
+	"autostart": {
+		"active": "1",
+		"address": "0x0108",
+		"value": "0x80",
+		"type": "bit"
+	},
+	"definitions": [
+		{
+			"name": "Prologue",
+			"address": "0x09D3",
+			"value": "0xCC",
+			"type": "eq"
+		},
+		{
+			"name": "D.Mist Begin",
+			"address": "0x1800",
+			"value": "0x00DE",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "D.Mist End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Girl Begin",
+			"address": "0x1800",
+			"value": "0x00EC",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Girl End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Officer Begin",
+			"address": "0x1800",
+			"value": "0x00ED",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Officer End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Tellah Joins the Party",
+			"address": "0x0772",
+			"value": "0x151A",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x06DF",
+					"value": "0x08",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Octomamm Begin",
+			"address": "0x1800",
+			"value": "0x00DF",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Octomamm End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Edward Joins the Party",
+			"address": "0x0772",
+			"value": "0x75A8",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x06BB",
+					"value": "0x2C",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Antlion Begin",
+			"address": "0x1800",
+			"value": "0x00E0",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Antlion End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "WaterHag Begin",
+			"address": "0x1800",
+			"value": "0x00EF",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "WaterHag End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "MomBomb Begin",
+			"address": "0x1800",
+			"value": "0x00E1",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "MomBomb End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Fabul Entrance",
+			"address": "0x1701",
+			"value": "0x2600",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0679",
+					"value": "0x20",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Dragoon Begin",
+			"address": "0x1800",
+			"value": "0x00F1",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Dragoon End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Palom and Porom Join the Party",
+			"address": "0x0772",
+			"value": "0x16E2",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x06DF",
+					"value": "0x08",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Milon Begin",
+			"address": "0x1800",
+			"value": "0x00E2",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Milon End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Milon Z. Begin",
+			"address": "0x1800",
+			"value": "0x00E3",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Milon Z. End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Cecil Became a Paladin!",
+			"address": "0x0772",
+			"value": "0x2B68",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x06DF",
+					"value": "0x08",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Baron Guards Begin",
+			"address": "0x1800",
+			"value": "0x00FA",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Baron Guards End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Karate Begin",
+			"address": "0x1800",
+			"value": "0x00F2",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Karate End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Baigan Begin",
+			"address": "0x1800",
+			"value": "0x00E4",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Baigan End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Kainazzo Begin",
+			"address": "0x1800",
+			"value": "0x00E4",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Kainazzo End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Cave Magnes Entrance",
+			"address": "0x1701",
+			"value": "0x8C00",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0679",
+					"value": "0x20",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Dark Elf Begin",
+			"address": "0x1800",
+			"value": "0x00E7",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Dark Elf End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "FlameDog Begin",
+			"address": "0x1800",
+			"value": "0x01C3",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "FlameDog End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Magus Sisters Begin",
+			"address": "0x1800",
+			"value": "0x00E8",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Magus Sisters End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Valvalis Begin",
+			"address": "0x1800",
+			"value": "0x00EA",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Valvalis End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Calbrena Begin",
+			"address": "0x1800",
+			"value": "0x01A7",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Calbrena End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Golbez Begin",
+			"address": "0x1800",
+			"value": "0x01B6",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Golbez End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Dr.Lugae/Balnab Begin",
+			"address": "0x1800",
+			"value": "0x01A9",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Dr.Lugae/Balnab End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Dr.Lugae Begin",
+			"address": "0x1800",
+			"value": "0x01B5",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Dr.Lugae End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Dark Imps Begin",
+			"address": "0x1800",
+			"value": "0x0100",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Dark Imps End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Edge Joins the Party",
+			"address": "0x0772",
+			"value": "0x42C7",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x06BB",
+					"value": "0x6C",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "K.Eblan/Q.Eblan Begin",
+			"address": "0x1800",
+			"value": "0x00FE",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "K.Eblan/Q.Eblan End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Rubicant Begin",
+			"address": "0x1800",
+			"value": "0x00FF",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Rubicant End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Sealed Cave Entrance",
+			"address": "0x1701",
+			"value": "0x4401",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0679",
+					"value": "0x20",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "EvilWall Begin",
+			"address": "0x1800",
+			"value": "0x01AF",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "EvilWall End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Lost the Dark Crystal!",
+			"address": "0x0772",
+			"value": "0x5322",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x06BB",
+					"value": "0x2C",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "The Big Whale...!",
+			"address": "0x0772",
+			"value": "0x545C",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x06BB",
+					"value": "0x6C",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "FuSoYa Joins the Party",
+			"address": "0x0772",
+			"value": "0x13DA",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x06BB",
+					"value": "0x2C",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Grind Fight End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Elements Begin",
+			"address": "0x1800",
+			"value": "0x00DC",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Elements End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "CPU Begin",
+			"address": "0x1800",
+			"value": "0x00DD",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "CPU End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Asura Begin",
+			"address": "0x1800",
+			"value": "0x01B0",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Asura End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Leviatan Begin",
+			"address": "0x1800",
+			"value": "0x01AD",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Leviatan End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},			
+		{
+			"name": "Odin Begin",
+			"address": "0x1800",
+			"value": "0x00FB",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Odin End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Bahamut Begin",
+			"address": "0x1800",
+			"value": "0x01AE",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Bahamut End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Lunar Subterrane Entrance",
+			"address": "0x1701",
+			"value": "0x6701",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0679",
+					"value": "0x20",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Pale Dim Begin",
+			"address": "0x1800",
+			"value": "0x01FB",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Pale Dim End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Wyvern Begin",
+			"address": "0x1800",
+			"value": "0x01FC",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Wyvern End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Plague Begin",
+			"address": "0x1800",
+			"value": "0x01FE",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Plague End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "D.Lunars Begin",
+			"address": "0x1800",
+			"value": "0x01FD",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "D.Lunars End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},		
+		{
+			"name": "Lunar Core Entrance",
+			"address": "0x1701",
+			"value": "0x6E01",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0679",
+					"value": "0x20",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Ogopogo Begin",
+			"address": "0x1800",
+			"value": "0x01FA",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Ogopogo End",
+			"address": "0x0203",
+			"value": "0x00",
+			"type": "eq"
+		},
+		{
+			"name": "Zemus Begin",
+			"address": "0x1800",
+			"value": "0x01B3",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Zeromus Begin",
+			"address": "0x1800",
+			"value": "0x01B7",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0203",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Zeromus Death (Normal)",
+			"address": "0x2307",
+			"value": "0x0000",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0xF413",
+					"value": "0x0E",
+					"type": "eq"
+				},
+				{
+					"address": "0xEF89",
+					"value": "0x01",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Zeromus Death (uptCo)",
+			"address": "0x6CE3",
+			"value": "0xFF",
+			"type": "eq",
+			"next": [
+				{
+					"address": "0xEFB0",
+					"value": "0x00",
+					"type": "gt"
+				},
+				{
+					"address": "0xEFB0",
+					"value": "0x03",
+					"type": "lte"
+				}
+			]
+		},
+		{
+			"name": "Manual Split",
+			"address": "0x0200",
+			"value": "0xFFFF",
+			"type": "weq"
+		}
+	]
+}

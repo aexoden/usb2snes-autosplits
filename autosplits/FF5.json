@@ -1,0 +1,894 @@
+{
+	"name": "Final Fantasy V",
+	"autostart": {
+		"active": "1",
+		"address": "0x0108",
+		"value": "0x80",
+		"type": "bit"
+	},
+	"definitions": [
+		{
+			"name": "Prologue",
+			"address": "0x169C",
+			"value": "0xFC",
+			"type": "eq"
+		},
+		{
+			"name": "Pirate Cave Entrance",
+			"address": "0x0AD6",
+			"value": "0x0012",
+			"type": "weq"
+		},
+		{
+			"name": "Wind Shrine Entrance",
+			"address": "0x0AD6",
+			"value": "0x001B",
+			"type": "weq"
+		},
+		{
+			"name": "Wing Raptor Begin",
+			"address": "0x04F0",
+			"value": "0x01B7",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Wing Raptor End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Karlabos Begin",
+			"address": "0x04F0",
+			"value": "0x01B8",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Karlabos End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Siren Begin",
+			"address": "0x04F0",
+			"value": "0x01B9",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Siren End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "North Mountain Entrance",
+			"address": "0x0AD6",
+			"value": "0x003B",
+			"type": "weq"
+		},
+		{
+			"name": "Magisa Begin",
+			"address": "0x04F0",
+			"value": "0x01BA",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Magisa End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Worus Tower Entrance",
+			"address": "0x0AD6",
+			"value": "0x006A",
+			"type": "weq"
+		},
+		{
+			"name": "Galura Begin",
+			"address": "0x04F0",
+			"value": "0x01BB",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Galura End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Steamship Entrance",
+			"address": "0x0AD6",
+			"value": "0x009C",
+			"type": "weq"
+		},
+		{
+			"name": "LiquiFlame Begin",
+			"address": "0x04F0",
+			"value": "0x01BC",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "LiquiFlame End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Sergeant/Karnaks Begin",
+			"address": "0x04F0",
+			"value": "0x01BD",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Sergeant/Karnaks End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Ancient Library Entrance",
+			"address": "0x0AD6",
+			"value": "0x00A4",
+			"type": "weq"
+		},
+		{
+			"name": "Ifrit Begin",
+			"address": "0x04F0",
+			"value": "0x01EE",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Ifrit End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Byblos Begin",
+			"address": "0x04F0",
+			"value": "0x01BE",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Byblos End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Grind Begin",
+			"address": "0x0AD8",
+			"value": "0x2E2D",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0ADC",
+					"value": "0x00",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Grind End",
+			"address": "0x0AD8",
+			"value": "0x2E2D",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x0ADC",
+					"value": "0x02",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Sandworm Begin",
+			"address": "0x04F0",
+			"value": "0x01BF",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Sandworm End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Crayclaw Begin",
+			"address": "0x04F0",
+			"value": "0x01FA",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Crayclaw End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "AdamanTiMi Begin",
+			"address": "0x04F0",
+			"value": "0x01C0",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "AdamanTiMi End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Sol Cannon Begin",
+			"address": "0x04F0",
+			"value": "0x01C3",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Sol Cannon End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "ArchaeAvis Begin",
+			"address": "0x04F0",
+			"value": "0x01C4",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "ArchaeAvis End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Puroboros Begin",
+			"address": "0x04F0",
+			"value": "0x01C7",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Puroboros End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Chim.Brain Begin",
+			"address": "0x04F0",
+			"value": "0x01C5",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Chim.Brain End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Titan Begin",
+			"address": "0x04F0",
+			"value": "0x01C6",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Titan End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Abductor 1 Begin",
+			"address": "0x04F0",
+			"value": "0x01C8",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Abductor 1 End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Gilgamesh 1 Begin",
+			"address": "0x04F0",
+			"value": "0x01C9",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Gilgamesh 1 End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Gilgamesh 2 Begin",
+			"address": "0x04F0",
+			"value": "0x01D0",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Gilgamesh 2 End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Waterway Entrance",
+			"address": "0x0AD6",
+			"value": "0x0103",
+			"type": "weq"
+		},
+		{
+			"name": "Tyrasaurus Begin",
+			"address": "0x04F0",
+			"value": "0x01D1",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Tyrasaurus End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Abductor 2 Begin",
+			"address": "0x04F0",
+			"value": "0x01D2",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Abductor 2 End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Hiryuu Valley Entrance",
+			"address": "0x0AD6",
+			"value": "0x0123",
+			"type": "weq"
+		},
+		{
+			"name": "HiryuuPlant Begin",
+			"address": "0x04F0",
+			"value": "0x01D3",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "HiryuuPlant End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Gabbldegak Begin",
+			"address": "0x04F0",
+			"value": "0x01FC",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Gabbldegak End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Gilgamesh 3 Begin",
+			"address": "0x04F0",
+			"value": "0x01D4",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Gilgamesh 3 End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Atmos Begin",
+			"address": "0x04F0",
+			"value": "0x01D5",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Atmos End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Forest Entrance",
+			"address": "0x0AD6",
+			"value": "0x0164",
+			"type": "weq"
+		},
+		{
+			"name": "Seal Guardians Begin",
+			"address": "0x04F0",
+			"value": "0x01D6",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Seal Guardians End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Exdeath 1 Begin",
+			"address": "0x04F0",
+			"value": "0x01F7",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Exdeath 1 End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Exdeath Castle Entrance",
+			"address": "0x0AD6",
+			"value": "0x00EC",
+			"type": "weq"
+		},
+		{
+			"name": "Exdeath 2 Begin",
+			"address": "0x04F0",
+			"value": "0x01D9",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Exdeath 2 End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Antlion Begin",
+			"address": "0x04F0",
+			"value": "0x01DA",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Antlion End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Gargoyles Begin",
+			"address": "0x04F0",
+			"value": "0x01E2",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Gargoyles End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Mummies Begin",
+			"address": "0x04F0",
+			"value": "0x01DB",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Mummies End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Merugene Begin",
+			"address": "0x04F0",
+			"value": "0x01E0",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Merugene End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Cleft of Dimension Entrance",
+			"address": "0x0AD6",
+			"value": "0x01DC",
+			"type": "weq"
+		},
+		{
+			"name": "Calofisteri Begin",
+			"address": "0x04F0",
+			"value": "0x01F2",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Calofisteri End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Apanda Begin",
+			"address": "0x04F0",
+			"value": "0x01F8",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Apanda End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Catastroph Begin",
+			"address": "0x04F0",
+			"value": "0x01F4",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Catastroph End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Halicarnaso Begin",
+			"address": "0x04F0",
+			"value": "0x01DE",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Halicarnaso End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Twin Tania Begin",
+			"address": "0x04F0",
+			"value": "0x01F6",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Twin Tania End",
+			"address": "0x1F01",
+			"value": "0xD1",
+			"type": "eq"
+		},
+		{
+			"name": "Exdeath Chamber Entrance",
+			"address": "0x0AD6",
+			"value": "0x01FD",
+			"type": "weq"
+		},
+		{
+			"name": "Exdeath Final Begin",
+			"address": "0x04F0",
+			"value": "0x01EF",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1F01",
+					"value": "0xEA",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Exdeath Final Death (Any%)",
+			"address": "0x2306",
+			"value": "0x0000",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x7CF9",
+					"value": "0x00",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "Exdeath Final Death (Glitchless)",
+			"address": "0x231A",
+			"value": "0x80",
+			"type": "eq",
+			"next": [
+				{
+					"address": "0x1FC3",
+					"value": "0xE0",
+					"type": "eq"
+				}
+			]
+		},
+		{
+			"name": "NeoExdeath Death",
+			"address": "0x2386",
+			"value": "0x0000",
+			"type": "weq",
+			"next": [
+				{
+					"address": "0x1D01",
+					"value": "0x12",
+					"type": "eq"
+				},
+				{
+					"address": "0x1D01",
+					"value": "0x3B",
+					"type": "eq"
+				}
+			]
+		}
+	]
+}
